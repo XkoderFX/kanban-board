@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+.kanban {
+  display: flex;
+  padding: 1.875rem;
+  background-color: #009578;
+  border-radius: 0.3125rem;
+  max-width: 1000px;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.kanban * {
+  font-family: sans-serif;
+}
+
+.kanban__column {
+  flex: 1 1 auto;
+}
+
+.column__title {
+  color: #fff;
+  font-size: 1.875rem;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.column__items {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+.item__input {
+  padding: 0.625rem 0.9375rem;
+  background-color: #fff;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+.column__dropzone {
+  height: 10px;
+  transition: background 0.15s, height 0.15s;
+}
+
+.column__dropzone_active {
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+  width: 100%;
+  padding: 0.625rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background 0.2s linear 0s;
+  backdrop-filter: blur(10px);
+  border: none;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+.btn:hover {
+  transition: background 0.2s linear 0s;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
